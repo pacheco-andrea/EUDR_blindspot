@@ -1,0 +1,11 @@
+.o
+.pyc
+.class
+.log
+.lock
+.tmp
+.Thumbs
+.Rproj.user/
+.Rproj
+.pptx
+.ppt
