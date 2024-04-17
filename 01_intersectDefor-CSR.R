@@ -14,7 +14,7 @@ library(sf)
 library(dplyr)
 
 #directory
-wdmain <- "N:/eslu/work/CLEVER/EUDR_soyMoratorium/"
+wdmain <- "N:/eslu/priv/pacheco/EUDR_blindspot/"
 my_crs_SAaea <- "+proj=aea +lat_0=-32 +lon_0=-60 +lat_1=-5 +lat_2=-42 +x_0=0 +y_0=0 +ellps=GRS80 +units=m +no_defs"
 
 
