@@ -27,7 +27,11 @@ deforPoly <- st_transform(deforPoly, my_crs_SAaea)
 
 # visualize this deforestation per year
 data <- deforPoly
-data$area <- as.numeric((st_area(data))/10000) 
+data$area <- as.numeric((st_area(data))/1000000) # convert from m^2 to km2
+
+data %>%
+  st_drop_geometry() %>%
+  summarize(sum = sum(area))
 
 ggplot(data) +
   geom_col(aes(year, (area/100))) +
